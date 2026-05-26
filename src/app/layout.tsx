@@ -1,30 +1,16 @@
+// Raiz App Router — envelope do documento
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./assets/styles/globals.css";
+import "@/assets/styles/globals.css"; // Tailwind + tema
+import { AppShell } from "@/core/app-shell";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+export const metadata: Metadata = { title: "Petshop LEGO · Painel" };
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Pet Shop",
-  description: "Projeto Next JS",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="pt-BR">
+      <body className="min-h-screen antialiased">
+        <AppShell>{children}</AppShell> {/* children desce até <main> dentro do shell */}
+      </body>
     </html>
   );
 }
