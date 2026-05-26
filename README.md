@@ -19,7 +19,7 @@ Você pode começar a editar a página modificando o arquivo app/page.tsx. A pá
 
 Este projeto usa next/font para otimizar e carregar automaticamente a Geist, uma nova família de fontes da Vercel.
 
-Saiba Mais
+## Saiba Mais
 Para saber mais sobre o Next.js, dê uma olhada nos seguintes recursos:
 
 Documentação do Next.js - saiba mais sobre os recursos e a API do Next.js.
@@ -28,9 +28,7 @@ Aprenda Next.js - um tutorial interativo de Next.js.
 
 Você pode conferir o repositório do Next.js no GitHub - seu feedback e contribuições são bem-vindos!
 
-Implantar na Vercel
+## Implantar na Vercel
 A maneira mais fácil de implantar seu app Next.js é usar a Plataforma Vercel dos criadores do Next.js.
 
-Confira nossa documentação de implantação do Next.js para mais detalhes.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Confira nossa [documentação de implantação do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes
